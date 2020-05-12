@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+hidden: false
 title: Will Microsoft App-V be dead in 2020?
 authors: [ryan]
 categories: [App-V]
@@ -222,10 +222,11 @@ In 2018 Microsoft has introduced a new packaging format called MSIX. I have even
 
 This year Microsoft also introduced MSIX App Attach, allowing administrators to separate the applications from operating system in a dedicated layer. This layering technique provides better management while keeping the native application user experience. Using MSIX App Attach still provides the isolation using MSIX technology but also provides the ability to bundle multiple MSIX applications. The following video contains an excellent explanation.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QLDu6QVohEI?start=66" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/QLDu6QVohEI?start=66" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Microsoft App-V is dead
 Yes, besides Microsoft App-V is still supported and maintained, it is dead. It is clear since the integration of the App-V client in Windows 10, Microsoft has put minimal effort in this technology. There is minimal, to no information available on the various changes and fixes in the App-V client. Nevertheless, Microsoft App-V will be around for many years. Many organizations invested a lot of time and resources to convert applications to App-V packages. The transition to a new packaging format, like MSIX, is not done over night. But looking at the investment in MSIX and App Attach using the traction of Windows Virtual Desktop, the new strategy is clearly not App-V. Therefore Microsoft App-V is dead.
+
 I think Microsoft is going to continue to invest in MSIX in 2020, making Microsoft App-V obsolete. Therefore, I would not recommend to organizations to invest in Microsoft App-V anymore. In 2020 it will be the time to prepare for adoption and transition to MSIX as the new standard for application virtualization, isolation and deployment. What do you think will happen with Microsoft App-V? Leave your thoughts in the comments below.
 
 Photo by [Eliott Van Buggenhout](https://unsplash.com/@eli29?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/shipwreck?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}
