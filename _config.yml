@@ -25,12 +25,11 @@ authors:
       linkedin:       https://www.linkedin.com/in/ryanbijkerk/
       github:         https://github.com/RyanBijkerk
       reddit:         https://www.reddit.com/user/ryanbijkerk
-    henk:
-      name:           Henk Droplul
-      picture:         /assets/images/avatar2.jpg
-      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
-      twitter:        https://twitter.com/wowthemesnet
-      linkedin:       https://linkedin.com/in/ryanbijkerk
+    ivan:
+      name:           Ivan Maatman
+      picture:        /assets/images/authors/ivan.png
+      bio:            "Ivan is a experienced Consultant with a demonstrated history of working in the information technology and services industry. Skilled in Microsoft ConfigMgr, Desktop Deplyoment, App-V, Windows Server and Virtualization."
+      linkedin:       https://www.linkedin.com/in/ivanmaatman/
 # Defaults
 defaults:
 
