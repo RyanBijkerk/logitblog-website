@@ -675,20 +675,11 @@ article p,article pre,article figure,article img,article blockquote,article ifra
 	margin-bottom:2rem;
 }
 article blockquote {
-	padding-left:40px;
-	margin-left:0px;
-	font-style:italic;
-	position:relative;
-}
-article blockquote:before {
-	content:"“";
-	font-family:Georgia;
-	font-size:8rem;
-	margin:-1rem 2rem 0 -3.9rem;
-	position:absolute;
-	opacity:1;
-	float:left;
-	line-height:1;
+    padding: 30px;
+    position: relative;
+    background: #f8f9f9;
+    border-left: 3px solid #e86240;
+    font-style: italic;
 }
 
 article h1,article h2,article h3,article h4,article h5,article h6,article .h1,article .h2,article .h3,article .h4,article .h5,article .h6 {
