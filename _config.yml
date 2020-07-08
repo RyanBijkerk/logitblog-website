@@ -42,6 +42,11 @@ authors:
       bio:            "Matthijs his mission: inspiring others to discover new ways of working. Over the years, Matthijs have provided 100+ training courses and workshops in the fields of Scrum, Agile Product Development, Kanban, and personal leadership."
       linkedin:       https://www.linkedin.com/in/matthijsdebooij/
       twitter:        https://twitter.com/agileteamswork
+    marc:
+      name:           Marc Jacobs
+      picture:        /assets/images/authors/marc.png
+      bio:            "Marc is Innovative Software Developer and Co-founder at Jump. Jump helps businesses JUMP to the next level by building awesome apps that scale."
+      linkedin:       https://www.linkedin.com/in/scrumdeveloper/
 # Defaults
 defaults:
 
