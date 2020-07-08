@@ -30,6 +30,12 @@ authors:
       picture:        /assets/images/authors/ivan.png
       bio:            "Ivan is a experienced Consultant with a demonstrated history of working in the information technology and services industry. Skilled in Microsoft ConfigMgr, Desktop Deplyoment, App-V, Windows Server and Virtualization."
       linkedin:       https://www.linkedin.com/in/ivanmaatman/
+    niels:
+      name:           Niels Geursen
+      picture:        /assets/images/authors/niels.png
+      bio:            "Niels started his career in the year 2000. In the past 17 years, he learned about the IT challenges from small to enterprise companies. In all these years Niels also got the opportunity to educate himself by following courses and doing exams for Citrix, Microsoft, and VMware."
+      linkedin:       https://www.linkedin.com/in/nielsgeursen/
+      twitter:        https://twitter.com/NielsGeursen
 # Defaults
 defaults:
 
