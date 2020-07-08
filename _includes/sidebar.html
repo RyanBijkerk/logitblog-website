@@ -1,4 +1,23 @@
 <div>
+    <h4 class="font-weight-bold spanborder"><span>Search</span></h4>   
+    <div id="search-container">
+        <input class="form-control border-0" id="search-input" placeholder="search..." type="text">
+      <div class="search-results">
+        <ul id="results-container"></ul>
+      </div>
+    </div>
+
+    <!-- Configuration -->
+    <script>
+        var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
+        })
+    </script>
+
+
     <h4 class="font-weight-bold spanborder"><span>Follow me</span></h4>   
     <div style="list-style: none; padding: 0px; margin: auto; padding: 10px">
         <img style="width: 42px; margin: 5px;" src="../assets/images/socials/008-twitter.png">

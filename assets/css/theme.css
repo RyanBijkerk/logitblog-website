@@ -849,3 +849,19 @@ div.a2a_full_footer {display:none;}
     font-weight: 500;
     text-transform: uppercase;
 }
+#search-container {
+	border: 1px black;
+	height: 100px;
+}
+.search-results {
+    border-radius: 0px 0px 10px 10px;
+    width: 369px;
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2)
+}
+#results-container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
