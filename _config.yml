@@ -48,6 +48,11 @@ authors:
       bio:            "Marc is Innovative Software Developer and Co-founder at Jump. Jump helps businesses JUMP to the next level by building awesome apps that scale."
       linkedin:       https://www.linkedin.com/in/scrumdeveloper/
       twitter:        https://twitter.com/jacobsmv
+    dennis:
+      name:           Dennis Geerling
+      picture:        /assets/images/authors/dennis.png
+      bio:            "Dennis is a troubleshoot guru and has over 10 years of EUC experience. Dennis is a proud Dutch man, but currently living the American dream in sunny California."
+      linkedin:       https://www.linkedin.com/in/dennis-geerlings-13411933/
 # Defaults
 defaults:
 
