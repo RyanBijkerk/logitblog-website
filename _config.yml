@@ -36,6 +36,12 @@ authors:
       bio:            "Niels started his career in the year 2000. In the past 17 years, he learned about the IT challenges from small to enterprise companies. In all these years Niels also got the opportunity to educate himself by following courses and doing exams for Citrix, Microsoft, and VMware."
       linkedin:       https://www.linkedin.com/in/nielsgeursen/
       twitter:        https://twitter.com/NielsGeursen
+    matthijs:
+      name:           Matthijs de Booij
+      picture:        /assets/images/authors/matthijs.png
+      bio:            "Matthijs his mission: inspiring others to discover new ways of working. Over the years, Matthijs have provided 100+ training courses and workshops in the fields of Scrum, Agile Product Development, Kanban, and personal leadership."
+      linkedin:       https://www.linkedin.com/in/matthijsdebooij/
+      twitter:        https://twitter.com/agileteamswork
 # Defaults
 defaults:
 
