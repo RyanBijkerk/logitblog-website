@@ -9,7 +9,7 @@ pagination:
 <!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
     
 <div class="row mt-3">
-    <div class="col-md-8 main-loop">
+    <div class="col-md-9 main-loop">
         
         {% for post in paginator.posts %}
         
@@ -28,7 +28,7 @@ pagination:
         
     </div>
     
-    <div class="col-md-4">
+    <div class="col-md-3">
         {% include sidebar.html %}    
     </div>
 </div>
