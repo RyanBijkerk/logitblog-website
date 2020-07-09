@@ -1,0 +1,30 @@
+{% for page_author in page.authors %}
+{% assign author = site.authors[page_author] %}
+
+<div class="row mt-5">
+    <div class="col-md-2 align-self-center">
+        {% if author.picture %}
+            <img class="rounded-circle" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{author.name}}" width="90"/>
+        {% endif %} 
+    </div>
+    <div class="col-md-10">		
+        <h5 class="font-weight-bold">Written by {{ author.name }} 
+            <span>
+            {% if author.twitter %}
+            <a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-2"><i class="fab fa-twitter"></i></a>
+            {% endif %}
+            {% if author.linkedin %}
+            <a target="_blank" href="{{ author.linkedin }}" class="btn btn-outline-success btn-sm btn-round ml-2"><i class="fab fa-linkedin"></i></a>
+            {% endif %}
+            {% if author.github %}
+            <a target="_blank" href="{{ author.linkedin }}" class="btn btn-outline-success btn-sm btn-round ml-2"><i class="fab fa-github"></i></a>
+            {% endif %}
+            {% if author.reddit %}
+            <a target="_blank" href="{{ author.linkedin }}" class="btn btn-outline-success btn-sm btn-round ml-2"><i class="fab fa-reddit"></i></a>
+            {% endif %}
+            </span>
+        </h5>
+        <p>{{ author.bio }}</p>
+    </div>
+</div>
+{% endfor %}		
