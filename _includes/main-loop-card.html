@@ -18,7 +18,7 @@
 	</div>
 	
 	{% if post.image %}
-	<div style="width: 100%; height: 200px;">
+	<div style="width: 100%; max-height: 240px;">
 		<a href="{{site.baseurl}}{{post.url}}">
 			<img style="width: 100%;" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
 		</a>
@@ -27,7 +27,7 @@
 
 	<div>
 		<p class="excerpt">
-		{{ post.excerpt  | strip_html | strip_newlines | truncate: 186}}
+		{{ post.excerpt  | strip_html | strip_newlines | truncate: 250}}
 		</p>
 	</div>
 	<div style="margin-top: 20px; margin-bottom: 20px; width: 100%">

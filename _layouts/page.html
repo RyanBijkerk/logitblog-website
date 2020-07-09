@@ -3,12 +3,19 @@ layout: default
 ---
 
 <div class="container">
-<h3 class="font-weight-bold spanborder"><span>{{page.title}}</span></h3>
-<div class="page-content">
-{{ content }}
-<!-- Comments -->
-{% if page.comments == true %}
-{% include comments.html %}
-{% endif %}
-</div>
+    <div class="row mt-6">
+        <div class="col-md-8">
+            <h3 class="font-weight-bold spanborder"><span>{{page.title}}</span></h3>
+            <div class="page-content">
+                {{ content }}
+                <!-- Comments -->
+                {% if page.comments == true %}
+                {% include comments.html %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-4">
+            {% include sidebar.html %}    
+        </div>
+    </div>
 </div>

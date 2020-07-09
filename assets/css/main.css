@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem; }
 
 p {
+  color: rgba(0,0,0,0.59);
   margin-top: 0;
   margin-bottom: 1rem; }
 
@@ -190,6 +191,7 @@ svg {
   vertical-align: middle; }
 
 table {
+  width: 100%;
   border-collapse: collapse; }
 
 caption {
