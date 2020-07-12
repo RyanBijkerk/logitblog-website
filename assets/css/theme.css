@@ -877,3 +877,7 @@ div.a2a_full_footer {display:none;}
 .footer-text{
 	color: white;
 }
+.authorbox-image {
+	display: block;
+    margin-left: auto
+}
