@@ -4,6 +4,7 @@ logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
 disqus: 'logitblog'
+google_analytics: 'UA-37914193-1'
 email: 'mail@logitblog.com'
 
 include: ["_pages"]
