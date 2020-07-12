@@ -7,7 +7,7 @@ categories: [GitHub]
 tags: [Blog, GitHub Pages, Jekyll]
 image: assets/images/posts/2020-07-12-moved-away-from-wordpress-to-github-pages/moved-away-from-wordpress-to-github-pages-feature-image.png
 ---
-It took me some time to move all the posts, but it has been done. Goodby WordPress and hello Github pages! Other the last 10 years Logit Blog has been hosted on a small hosting provider in the Netherlands running WordPress. On my site I have experiences a lot of errors and even crashes of my entire site when upgrading plugins or to the latest version of WordPress. I'm done with that, so time to move on! This blog post will share some details and information how I moved not only Logit Blog but also GO-EUC to Github.
+It took me some time to move all the posts, but it has been done. Goodby WordPress and hello Github pages! Other the last 10 years Logit Blog has been hosted on a small hosting provider in the Netherlands running WordPress. On my site I have experiences a lot of errors and even crashes of my entire site when upgrading plugins or to the latest version of WordPress. I'm done with that, so time to move on! This blog post will share some details and information how I moved not only Logit Blog but also GO-EUC to Github pages.
 
 ## What are the benefits of Github pages?
 There are couple benefits when moving to Github pages, the first I want to highlight is performance. Github pages is based on Jekyll which is a engine to generate static websites or blogs. This result in a website that load very fast, as the content is static. As Github has a content distribution network the website is always served from the closed location, resulting in a fast experience.
@@ -62,9 +62,7 @@ Github Pages does allow you to embed iframe or other sources like Twitter. Many 
 Running your website locally can help validate the markdown of your post to ensure everything looks Ok. Another way to validate this is to set the post to hidden. In the page front matter, you can add "hidden: true" to hide the post. This way the post is not listed on the site, but is still accessible using the URL.
 
 ## Conclusion
-Although I was quite happy using WordPress, the heavy maintains and hosting cost eventually moved me to Github pages. Github pages is a great platform to run your blog with low cost and great performance. Of course, there are some downsides. As the website is static, there are some limitations in dynamic content and writing in Markdown format requires time to getting used to.
-
-But at the end, moving your site to Github pages will benefit in performance, security and allows better collaboration.
+Although I was quite happy using WordPress, the heavy maintains and hosting cost eventually moved me to Github pages. Github pages is a great platform to run your blog with low cost and great performance. Of course, there are some downsides. As the website is static, there are some limitations in dynamic content and writing in Markdown format requires time to getting used to. But at the end, moving your site to Github pages will benefit in performance, security and allows better collaboration.
 
 Big credits to [Aaron Parker](https://twitter.com/stealthpuppy){:target="_blank"} and [Bill Raymond](https://twitter.com/cambermast){:target="_blank} sharing knowledge on Github pages. You both inspire me to make this move.
 
