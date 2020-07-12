@@ -59,6 +59,8 @@ Github Pages does allow you to embed iframe or other sources like Twitter. Many 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Ready to go for the our digital <a href="https://twitter.com/E2EVC?ref_src=twsrc%5Etfw">@E2EVC</a> session with <a href="https://twitter.com/eltjovg?ref_src=twsrc%5Etfw">@eltjovg</a> <a href="https://twitter.com/hashtag/GOEUC?src=hash&amp;ref_src=twsrc%5Etfw">#GOEUC</a> <a href="https://t.co/9KczJGC0Xz">pic.twitter.com/9KczJGC0Xz</a></p>&mdash; Ryan Ververs-Bijkerk (@Logitblog) <a href="https://twitter.com/Logitblog/status/1271432965822844928?ref_src=twsrc%5Etfw">June 12, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+Running your website locally can help validate the markdown of your post to ensure everything looks Ok. Another way to validate this is to set the post to hidden. In the page front matter, you can add "hidden: true" to hide the post. This way the post is not listed on the site, but is still accessible using the URL.
+
 ## Conclusion
 Although I was quite happy using WordPress, the heavy maintains and hosting cost eventually moved me to Github pages. Github pages is a great platform to run your blog with low cost and great performance. Of course, there are some downsides. As the website is static, there are some limitations in dynamic content and writing in Markdown format requires time to getting used to.
 
