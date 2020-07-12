@@ -3,8 +3,8 @@ name: 'Logit Blog'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
-disqus: ''
-email: ''
+disqus: 'logitblog'
+email: 'mail@logitblog.com'
 
 include: ["_pages"]
 permalink: /:title/
