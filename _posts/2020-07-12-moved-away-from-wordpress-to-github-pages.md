@@ -1,6 +1,6 @@
 ---
 layout: post
-hidden: true
+hidden: false
 title: Moved away from WordPress to GitHub pages
 authors: [ryan]
 categories: [GitHub]
