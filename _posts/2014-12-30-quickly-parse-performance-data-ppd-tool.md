@@ -30,6 +30,6 @@ The Chart worksheet contains all the charts of the collected results. This way y
 
 <a href="{{site.baseurl}}/assets/images/posts/2014-12-30-quickly-parse-performance-data-ppd-tool/PPD-Report.png"><img class="alignnone size-medium wp-image-3068" src="{{site.baseurl}}/assets/images/posts/2014-12-30-quickly-parse-performance-data-ppd-tool/PPD-Report.png" alt="PPD-Report" width="270" height="300" /></a>
 <h2>Where can I download the tool?</h2>
-I think this tool is very useful when you need to analyze performance data or write a whitepaper and need some charts. Therefore I decided to share this tool with the community and you can download PPD <a title="PPD Download" href="/downloads/PPD.zip" target="_blank">here</a>.
+I think this tool is very useful when you need to analyze performance data or write a whitepaper and need some charts. Therefore I decided to share this tool with the community and you can download PPD <a title="PPD Download" href="{{site.baseurl}}/tooling/parse-performance-data/" target="_blank">here</a>.
 
 If you have comments or questions please leave them below.
