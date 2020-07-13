@@ -16,7 +16,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-feed
   
 authors:
     ryan:
