@@ -5,11 +5,11 @@ authors: [ryan]
 comments: true
 categories: [Parse Performance Data]
 ---
-<img class="alignleft size-full wp-image-3065" src="{{site.baseurl}}/assets/images/pages/parse-performance-data/08_settings.png" alt="" width="128" height="128" />Parse Performance Data (PPD) that quickly parses large performance CSV files and creates a Microsoft Excel report in a couple of seconds. This helps to collect the interesting metrics from the file and it even creates charts for each metric that is configured.
+<img class="alignleft size-full wp-image-3065" src="{{site.baseurl}}/assets/images/pages/parse-performance-data/08_settings.png" alt="" width="128" height="128" />Parse Performance Data (PPD) quickly parses large performance CSV files and creates a Microsoft Excel report in a couple of seconds. This helps to collect the interesting metrics from the file and it even creates charts for each metric that is configured.
 <h2>Where can I download it?</h2>
 
 | Type | Version | MD5 Hash |
-| :--: | :-----: | :------: | 
+| :--- | :------ | :------- | 
 | Stable | [1.1.17188.1]({{site.baseurl}}/downloads/ppd/master/ppd.zip){:target="_blank"} | 659818b05236d0516ede1ef2806fc075 |
 | Develop | [0.0.17125.3]({{site.baseurl}}/downloads/ppd/develop/ppd.zip){:target="_blank"}  | fc54f80cabdbe6d34f28f339166c3c25 | 
 | Source code | [Github](https://github.com/RyanBijkerk/ppd){:target="_blank"} | N/A |
