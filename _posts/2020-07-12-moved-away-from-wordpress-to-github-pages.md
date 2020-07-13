@@ -64,7 +64,7 @@ Running your website locally can help validate the markdown of your post to ensu
 ## Conclusion
 Although I was quite happy using WordPress, the heavy maintains and hosting cost eventually moved me to Github pages. Github pages is a great platform to run your blog with low cost and great performance. Of course, there are some downsides. As the website is static, there are some limitations in dynamic content and writing in Markdown format requires time to getting used to. But at the end, moving your site to Github pages will benefit in performance, security and allows better collaboration.
 
-Big credits to [Aaron Parker](https://twitter.com/stealthpuppy){:target="_blank"} and [Bill Raymond](https://twitter.com/cambermast){:target="_blank} sharing knowledge on Github pages. You both inspire me to make this move.
+Big credits to [Aaron Parker](https://twitter.com/stealthpuppy){:target="_blank"} and [Bill Raymond](https://twitter.com/billraymonde){:target="_blank} sharing knowledge on Github pages. You both inspire me to make this move. If you are looking for a great resource on getting started with Jekyll, Bill created a [video series](https://www.youtube.com/playlist?list=PLWzwUIYZpnJuT0sH4BN56P5oWTdHJiTNq){:target="_blank"} on this topic.
 
 If you have any questions or if you need help, feel free to reach out or leave a comment below.
 
