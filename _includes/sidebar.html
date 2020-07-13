@@ -1,3 +1,4 @@
+{% assign author = site.authors | where:"name","Ryan Ververs-Bijkerk" | first %}
 <div>
     <h4 class="font-weight-bold spanborder" style="margin-top: 8px;"><span>Search</span></h4>   
     <div id="search-container">
@@ -17,13 +18,12 @@
         })
     </script>
 
-
     <h4 class="font-weight-bold spanborder"><span>Follow me</span></h4>   
     <div style="list-style: none; padding: 0px; margin: auto; padding: 10px">
-        <img style="width: 42px; margin: 5px;" src="{{site.baseurl}}/assets/images/socials/008-twitter.png">
-        <img style="width: 42px; margin: 5px;" src="{{site.baseurl}}/assets/images/socials/027-linkedin.png">
-        <img style="width: 41px; margin: 5px;" src="{{site.baseurl}}/assets/images/socials/050-github.png">
-        <img style="width: 41px; margin: 5px;" src="{{site.baseurl}}/assets/images/socials/052-rss.png">
+        <a href="{{ author.twitter }}" target="_blank"><img style="width: 40px; margin: 6px;" src="{{site.baseurl}}/assets/images/socials/008-twitter.png"></a>
+        <a href="{{ author.linkedin }}" target="_blank"><img style="width: 40px; margin: 6px;" src="{{site.baseurl}}/assets/images/socials/027-linkedin.png"></a>
+        <a href="{{ author.github }}" target="_blank"><img style="width: 40px; margin: 6px;" src="{{site.baseurl}}/assets/images/socials/050-github.png"></a>
+        <a href="/feed.xml" target="_blank"><img style="width: 40px; margin: 6px;" src="{{site.baseurl}}/assets/images/socials/052-rss.png"></a>
     </div>
     
 
