@@ -1,6 +1,6 @@
 ---
 layout: post
-hidden: true
+hidden: false
 title: Remote Display Analyzer automation tips & tricks
 authors: [ryan]
 categories: [Remote Display Analyzer]
