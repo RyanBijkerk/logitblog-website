@@ -68,7 +68,7 @@ body {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #212529;
+  color: rgba(0,0,0,0.59);
   text-align: left;
   background-color: #fff; }
 
