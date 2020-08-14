@@ -52,7 +52,7 @@ To create a chart like the example above, it is recommended to use a spreadsheet
 ## Conclusion
 Remote Display Analyzer is a very powerful tool that can be using in your automation to troubleshoot issues. At [GO-EUC](https://www.go-euc.com){:target="blank"} Remote Display Analyzer is one of the default data sources for all researches. The various parameters allows you to enable the logging, adjusted the interval and delimiter and specify a capture limit. It is recommended to use a spreadsheet product like Microsoft Excel to create charts, which always helps understand and present the results.
 
-Remote Display Analyzer can be downloaded right [here]{https://rdanalyzer.com/pro/}. Please note, the subscribed edition is required for the logging feature.
+Remote Display Analyzer can be downloaded right [here](https://rdanalyzer.com/pro/){:target="_blank"}. Please note, the subscribed edition is required for the logging feature.
 
 If you needs any help you can always contact Remote Display Analyzer support or leave a comment below.
 
