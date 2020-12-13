@@ -9,9 +9,6 @@ image: assets/images/posts/2020-11-30-should-you-invest-in-a-multi-cloud-strateg
 ---
 Should you invest in a multi-cloud strategy? Many organizations are transitioning to the cloud but why bet on a single horse? This question came up during a major outage at AWS that hit North America last week? This blog post will investigate some cloud strategies that will deal with these kinds of outages.
 
-#Table of Content
-{:toc}
-
 ## Outage at Amazon Web Services (AWS)
 In case you missed it, last week AWS suffer a major outage in North America, resulting in taking down a chunk of the internet. Serval AWS services were expiring problems last week Wednesday early in the morning. Many organizations relying on AWS were impacted resulting in the degradation of their services which affected the customer experiences.
 
