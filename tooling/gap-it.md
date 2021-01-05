@@ -14,8 +14,8 @@ It comes with functionality to scan through the Windows Event Log searching for
 
 | Type | Version | MD5 Hash |
 | :--: | :-----: | :------: |
-| Stable | [1.0.17125.2](http://www.logitblog.com/downloads/GAP-IT/master/1.0.17125.2/GAP-IT.zip){:target="_blank} | d6cdeb822d7c9ad3148886cc135022c2 |
-| Develop | [0.0.17283.2](http://www.logitblog.com/downloads/GAP-IT/develop/0.0.17283.2/GAP-IT.zip){:target="_blank"} | 546e7625b2e0a31dcfb40ca207f9dd6a |
+| Stable | [1.0.17125.2](http://www.logitblog.com/downloads/GAP-IT/master/GAP-IT.zip){:target="_blank} | d6cdeb822d7c9ad3148886cc135022c2 |
+| Develop | [0.0.17283.2](http://www.logitblog.com/downloads/GAP-IT/develop/GAP-IT.zip){:target="_blank"} | 546e7625b2e0a31dcfb40ca207f9dd6a |
 
 <h2>Requirements:</h2>
 <ul>
