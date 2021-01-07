@@ -133,7 +133,7 @@ In order to integrate this into a pipeline, the Citrix API needs to be leveraged
 ![error-api]({{site.baseurl}}/assets/images/posts/2021-01-07-automated-citrix-microapp-deployment-with-azure-devops/error-api.png)
 </a>
 
-An important note for those who are using the PowerShell, in order to post the FormData PowerShell 6.1.0 or higher is required as this was added to the Invoke-WebRequest commandlet. More information can be found [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-7.1#parameters){target="_blank"}.
+An important note for those who are using the PowerShell, in order to post the FormData PowerShell 6.1.0 or higher is required as this was added to the Invoke-WebRequest commandlet. More information can be found [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-7.1#parameters){:target="_blank"}.
 
 For argument's sake, let’s assume there is a working way to import the microapps using a PowerShell script this can be integrated into a pipeline. In the following example, the artifact will be downloaded and provided to the script to import into Citrix Cloud.
 
