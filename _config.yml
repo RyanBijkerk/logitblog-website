@@ -54,6 +54,13 @@ authors:
       picture:        /assets/images/authors/dennis.png
       bio:            "Dennis is a troubleshoot guru and has over 10 years of EUC experience. Dennis is a proud Dutch man, but currently living the American dream in sunny California."
       linkedin:       https://www.linkedin.com/in/dennis-geerlings-13411933/
+    eltjo:
+      name:           Eltjo van Gulik
+      picture:        /assets/images/authors/eltjo.png
+      bio:            "Eltjo van Gulik is a Workspace Consultant and enthusiast. Citrix aficionado. Wannabee PowerShell buff. Blogger. Father and husband. Social, a tad pedantic and suitably lazy. Citrix CTP, PTEC member and SME."
+      twitter:        https://twitter.com/eltjovg
+      linkedin:       https://www.linkedin.com/in/eltjovangulik/
+
 # Defaults
 defaults:
 

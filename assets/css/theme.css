@@ -15,6 +15,7 @@ body {
 }
 img {
 	max-width:100%;
+	margin-top:10px;
 }
 .tofront {
 	position:relative;
@@ -671,10 +672,10 @@ footer {
     color: #222222;
 }
 article p,article pre,article figure,article img,article blockquote,article iframed,article embed {
-	margin-bottom:2rem;
+	margin-bottom:15px;
 }
 article blockquote {
-    padding: 30px;
+    padding: 20px;
     position: relative;
     background: #f8f9f9;
     border-left: 3px solid #e86240;
