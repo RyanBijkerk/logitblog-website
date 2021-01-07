@@ -12,7 +12,7 @@ With the fast changing pace of technology, it is important to stay in control an
 ## Disclaimer
  > Please note that this blog post is a written version of the "Automating Microapp Deployment with CI/CD in Azure DevOps" presentation for Citrix Converge 2020.
 
-<iframe width="930" height="523" src="https://www.youtube.com/embed/pgpa1iZONyU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="pgpa1iZONyU" %}
 
 ## The value of automation
 Cloud is changing our behavior from both a professional and a personal perspective. Each individual is using various applications daily, by phone, television, or at work. A great example is Netflix, as this is available in a lot of households. As a consumer, it is expected from Netflix to be available 24/7 and even though many of the friends and family are also subscribing to the service, it still works as usual. This means Netflix is responsible to scale with the demand. But if the catalog of Netflix stays the same why still bothering having it? Therefore, Netflix has an ever-evolving catalog which is updated continuously, but also the application itself to ensure to deliver all to content in our living room.
