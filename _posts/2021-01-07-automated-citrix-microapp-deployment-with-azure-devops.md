@@ -69,8 +69,8 @@ The en.json located in the i18n directory is a language file. All elements of th
 In order to get a microapp translated into code, the microapp needs to be exported. Now this can be done in two ways, using the management interface of Citrix Cloud or via the Citrix API, the latter, of course, being the preferred option.
 
 Using Citrix Cloud there are two possibilities, exporting the integration which includes all microapps or the microapp itself.
-<a href="{{site.baseurl}}/assets/images/posts/2021-01-07-automated-citrix-microapp-deployment-with-azure-devops/export-intergration.png" data-lightbox="citrix-export-integration">
-![citrix-export-integration]({{site.baseurl}}/assets/images/posts/2021-01-07-automated-citrix-microapp-deployment-with-azure-devops/export-intergration.png)
+<a href="{{site.baseurl}}/assets/images/posts/2021-01-07-automated-citrix-microapp-deployment-with-azure-devops/export-integration.png" data-lightbox="citrix-export-integration">
+![citrix-export-integration]({{site.baseurl}}/assets/images/posts/2021-01-07-automated-citrix-microapp-deployment-with-azure-devops/export-integration.png)
 </a>
 
 This is also possible via the API which is documented [here](https://developer.cloud.com/citrixworkspace/citrix-workspace-platform){:target="_blank"}. 
