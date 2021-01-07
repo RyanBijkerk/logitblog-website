@@ -1,6 +1,6 @@
 ---
 layout: post
-hidden: false
+hidden: true
 title: Automated Citrix Microapp deployment with Azure DevOps
 authors: [ryan, eltjo]
 categories: [Citrix]
