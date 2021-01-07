@@ -81,7 +81,7 @@ This is also possible via the API which is documented [here](https://developer.c
 ## Compiling a Microapp and getting it into a pipeline
 To get a microapp from code back into Citrix Cloud, the code needs to be compiled into a .mapp file. Now there is no utility available that can achieve this, so therefore a compile script has been created. This script will ensure to collect all the necessary files and compress them into the correct folder structure into a .mapp file.
 
-This method also allows adding validation if the structure is valid or any other additional checks. Now please note this is just a proof of concept at this stage and does require additional work which you can contribute to on GitHub right [here](https://github.com/applicationascode/general){:target="_blank").
+This method also allows adding validation if the structure is valid or any other additional checks. Now please note this is just a proof of concept at this stage and does require additional work which you can contribute to on GitHub right [here](https://github.com/applicationascode/general){:target="_blank"}.
 
 The next step is to compile the microapps via a pipeline and publish the artifact. In this sample, the compile script has been included in the git repository.
 <a href="{{site.baseurl}}/assets/images/posts/2021-01-07-automated-citrix-microapp-deployment-with-azure-devops/devops-repo.png" data-lightbox="devops-repo">
