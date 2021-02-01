@@ -65,27 +65,27 @@ The NVIDIA solution sounds interesting even for the default VDI desktop. The low
 </table>
 The tests show there is an increase in hypervisor CPU utilization when having a vGPU. The overall utilization is 12% higher compared to the 2vCPU's without a vGPU scenario. Compared to the 4vCPU's without a vGPU scenario, the difference is 8%.
 
-<a href="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/overall-host-util.png"><img class="alignnone size-large wp-image-4626" src="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/overall-host-util.png" alt="" width="790" height="206"></a>
+<a href="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/overall-host-util.PNG"><img class="alignnone size-large wp-image-4626" src="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/overall-host-util.PNG" alt="" width="790" height="206"></a>
 
 The difference between the scenario's when all the users are active is the same.
 
-<a href="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/active-users-host-util.png"><img class="alignnone size-large wp-image-4623" src="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/active-users-host-util.png" alt="" width="790" height="206"></a>
+<a href="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/active-users-host-util.PNG"><img class="alignnone size-large wp-image-4623" src="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/active-users-host-util.PNG" alt="" width="790" height="206"></a>
 <h2>User experience with and without a GPU</h2>
 Measuring the user experience is very difficult because it is always a personal opinion. What I find a great user experience may be a poor user experience for you.
 
 From a Login VSI perspective, it is interesting to see the baseline of the GPU scenario is slightly higher with 36ms compared to the 2vCPU's without a GPU scenario. As expected the 4vCPU's has a better baseline compared to the 2vCPU's without a GPU. The Login VSI baseline is measured based on response times of various applications. As Windows 10 is aware of a GPU the visuals may affect the results in the GPU scenario.
 
-<a href="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/loginvsi-baseline.png"><img class="alignnone size-full wp-image-4624" src="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/loginvsi-baseline.png" alt="" width="760" height="200"></a>
+<a href="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/loginvsi-baseline.PNG"><img class="alignnone size-full wp-image-4624" src="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/loginvsi-baseline.PNG" alt="" width="760" height="200"></a>
 
 Remote Display Analyzer captures multiple metrics and one of these is the frames per seconds (FPS). There are the number of frames sends over the protocol during the tests. I think it is a great metric but not really reliable. When there are no screen updates the FPS will be 1, and this can be confusing over time.
 
 It is very interesting to see the FPS difference between the two scenarios is minimal. Overall the tests without a GPU and 2vCPU's have slightly less FPS of 0.6. A user wouldn't notice the difference.
 
-<a href="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/overall-fps.png"><img class="alignnone size-large wp-image-4625" src="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/overall-fps.png" alt="" width="790" height="190"></a>
+<a href="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/overall-fps.PNG"><img class="alignnone size-large wp-image-4625" src="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/overall-fps.PNG" alt="" width="790" height="190"></a>
 
 In the workload, there is some video content played in the web browser. The results show the GPU scenario has 4 FPS more during the playback of a video.
 
-<a href="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/video-content-fps.png"><img class="alignnone size-large wp-image-4627" src="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/video-content-fps.png" alt="" width="790" height="176"></a>
+<a href="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/video-content-fps.PNG"><img class="alignnone size-large wp-image-4627" src="{{site.baseurl}}/assets/images/posts/2018-06-15-conflicted-results-with-nvidia-tesla-m10/video-content-fps.PNG" alt="" width="790" height="176"></a>
 
 As these scenarios are Office focused that include some videos there is no real difference between the scenarios. It may be interesting to see if there is a bigger difference when the resolution is higher like using multiple screens.
 <h2>Outdated Login VSI workloads</h2>
