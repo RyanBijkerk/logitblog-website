@@ -5,7 +5,7 @@ title: Increase the success rate of Azure DevOps pipelines using Pester
 authors: [ryan]
 categories: [DevOps]
 tags: [Azure DevOps, Pipelines, PowerShell, Pester]
-image: assets/images/posts/2021-02-26-increase-the-success-rate-of-azure-devops-pipelines-using-pester/increase-the-success-rate-of-azure-devops-pipelines-using-pester-feature-image.png
+image: assets/images/posts/2021-02-27-increase-the-success-rate-of-azure-devops-pipelines-using-pester/increase-the-success-rate-of-azure-devops-pipelines-using-pester-feature-image.png
 ---
 With the increase in Azure DevOps usage, more and more EUC environments are being deployed using pipelines. In the EUC environments, PowerShell is the primary scripting language to get these deployments automated. By using Pester the quality of the produced PowerShell code can be increased, which will result in a higher success rate of the DevOps pipeline. This blog post will provide some guidance and pointers how to use Pester in the Azure DevOps pipelines.
 
@@ -125,26 +125,26 @@ Once the pipeline has run successfully, both test and coverage results will be a
 ## Interpreting the test and code coverage results
 There are two pages available, a test results page and a code coverage page. The test results page will show all executed tests and directly show the failed tests.
 
-<a href="{{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-tests.png" data-lightbox="pipeline-tests">
-![pipeline-tests]({{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-tests.png)
+<a href="{{site.baseurl}}/assets/images/posts/2021-02-27-increase-the-success-rate-of-azure-devops-pipelines-using-pester/pipeline-tests.png" data-lightbox="pipeline-tests">
+![pipeline-tests]({{site.baseurl}}/assets/images/posts/2021-02-27-increase-the-success-rate-of-azure-devops-pipelines-using-pester/pipeline-tests.png)
 </a>
 
 By default, a filter is applied to only show the aborted and failed tests. By deselecting these options, all tests will be shown.
 
-<a href="{{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-tests-filter.png" data-lightbox="pipeline-tests-filter">
-![pipeline-tests-filter]({{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-tests-filter.png)
+<a href="{{site.baseurl}}/assets/images/posts/2021-02-27-increase-the-success-rate-of-azure-devops-pipelines-using-pester/pipeline-tests-filter.png" data-lightbox="pipeline-tests-filter">
+![pipeline-tests-filter]({{site.baseurl}}/assets/images/posts/2021-02-27-increase-the-success-rate-of-azure-devops-pipelines-using-pester/pipeline-tests-filter.png)
 </a>
 
 The code coverage tab will show the code coverage of each script and module that were included in the tests.
 
-<a href="{{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-coverage.png" data-lightbox="pipeline-coverage">
-![pipeline-coverage]({{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-coverage.png)
+<a href="{{site.baseurl}}/assets/images/posts/2021-02-27-increase-the-success-rate-of-azure-devops-pipelines-using-pester/pipeline-coverage.png" data-lightbox="pipeline-coverage">
+![pipeline-coverage]({{site.baseurl}}/assets/images/posts/2021-02-27-increase-the-success-rate-of-azure-devops-pipelines-using-pester/pipeline-coverage.png)
 </a>
 
 The code coverage page does provide the capabilities to open a specific script or module. This will show the overview of each individual function.
 
-<a href="{{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-coverage-module.png" data-lightbox="pipeline-coverage-module">
-![pipeline-coverage-module]({{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-coverage-module.png)
+<a href="{{site.baseurl}}/assets/images/posts/2021-02-27-increase-the-success-rate-of-azure-devops-pipelines-using-pester/pipeline-coverage-module.png" data-lightbox="pipeline-coverage-module">
+![pipeline-coverage-module]({{site.baseurl}}/assets/images/posts/2021-02-27-increase-the-success-rate-of-azure-devops-pipelines-using-pester/pipeline-coverage-module.png)
 </a>
 
 Unfortunately for some reason I did not manage to get the full file coverage working as files are missing. The pathToSources parameter is specified in the pipeline, but the files are not included. So if you managed to get this working, please share it in the comments below.
