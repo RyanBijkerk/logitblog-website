@@ -1,18 +1,18 @@
 ---
 layout: post
-hidden: true
-title: Increase the success rate of the Azure DevOps pipelines using Pester
+hidden: false
+title: Increase the success rate of Azure DevOps pipelines using Pester
 authors: [ryan]
 categories: [DevOps]
 tags: [Azure DevOps, Pipelines, PowerShell, Pester]
-image: assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/increase-the-success-rate-of-the-azure-devops-pipelines-using-pester-feature-image.png
+image: assets/images/posts/2021-02-26-increase-the-success-rate-of-azure-devops-pipelines-using-pester/increase-the-success-rate-of-azure-devops-pipelines-using-pester-feature-image.png
 ---
-With the increase in Azure DevOps usage, more and more EUC environments are being deployed using pipelines. In the EUC environments, PowerShell is the primary scripting language to get these deployments automated. By using Pester the quality of the produced PowerShell code is increased which will result in the success of the DevOps pipeline. This blog post will provide some guidance and pointers how to use Pester in the Azure DevOps pipelines.
+With the increase in Azure DevOps usage, more and more EUC environments are being deployed using pipelines. In the EUC environments, PowerShell is the primary scripting language to get these deployments automated. By using Pester the quality of the produced PowerShell code can be increased, which will result in a higher success rate of the DevOps pipeline. This blog post will provide some guidance and pointers how to use Pester in the Azure DevOps pipelines.
 
 ## What is pester
 Before going into the details let's start with the basics, so what is Pester?  
 
-Pester is the ubiquitous test and mock framework for PowerShell. Adding Pester tests to Powershell code will enhance code quality and allows you to start creating predictable changes. Pester integrates nicely with TFS, Azure, Github, Jenkins, and other CI servers, allowing you to fully automate your development lifecycle.
+Pester is the ubiquitous test and mock framework for PowerShell. Adding Pester tests to PowerShell code will enhance code quality and allows you to start creating predictable changes. Pester integrates nicely with TFS (Team Foundation Server), Azure, Github, Jenkins, and other CI servers, allowing you to fully automate your development lifecycle.
 
 For more information please visit: <a href="https://pester.dev/" target="_blank">Pester - The ubiquitous test and mock framework for PowerShell</a>)
 
@@ -21,7 +21,7 @@ It is important to understand using Pester is an investment to increase the code
 There are multiple guides available to help getting started with writing Pester tests. It is recommended to get familiar with the Pester syntax before continuing with the integration into the Azure DevOps pipeline.
 
 ## Integrating Pester in the pipeline
-There are multiple ways to integrate Pester into the Azure DevOps pipeline. It is possible to install a plugin from the Azure DevOps marketplace. An alternative way is using a PowerShell script as the Pester engine. Using an own PowerShell script does provide more flexibility and better control.
+There are multiple ways to integrate Pester into the Azure DevOps pipeline. It is possible to install a plugin from the Azure DevOps marketplace. An alternative way is using a PowerShell script as the Pester engine. Using your own PowerShell script does provide more flexibility and better control.
 
 The following script is an example Pester engine which has multiple parameters. The publish switch will enable the tests and code coverage results, which can be collected in the pipeline. This engine is written to be used in both the Azure DevOps pipeline but also locally.
 
@@ -69,16 +69,16 @@ if ($Publish) {
     Invoke-Pester $tests
 }
 ```
-In order to execute the Pester tests in the pipeline, 3 steps need to be implemented. 
+In order to execute the Pester tests in the pipeline, 3 steps need to be implemented: 
 
 1. Executing the Pester tests using the engine
 2. Publishing code coverage results
 3. Publishing unit tests results
 
-Quick note, the following pipeline examples are the YAML-based pipelines running on a Windows-based machine.
+Quick side note, the following pipeline examples are the YAML-based pipelines running on a Windows-based machine.
 
 ### Executing the Pester tests using the engine
-The first step is to start the engine and executing all the available Pester tests. This is done by using the following block.
+The first step is to start the engine and execute all the available Pester tests. This is done by using the following block:
 
 ```YAML
     - task: PowerShell@2
@@ -105,10 +105,10 @@ The engine will produce the tests and code coverage results in a separate direct
             pathToSources: '$(System.DefaultWorkingDirectory)\Publish'
             failIfCoverageEmpty: true
 ```
-As specified in the engine the code coverage results are produced in the JaCoCo format. As the code coverage results are mandatory the pipeline will fail if these are not available.
+As specified in the engine the code coverage results are produced in the JaCoCo format. As the code coverage results are mandatory, the pipeline will fail if these are not available.
 
 ### Publishing unit tests results
-The final step is publising the unit tests. If a test has failed it is important the pipeline will fail as well. This way the pipeline will not continue and any error needs to resolve before you can continue.
+The final step is publishing the unit tests. If a test has failed it is important the pipeline will fail as well. This way the pipeline will not continue and any errors encountered will need to be resolve before you can continue.
 
 ```YAML
         - task: PublishTestResults@2
@@ -120,7 +120,7 @@ The final step is publising the unit tests. If a test has failed it is important
             mergeTestResults: true
             failTaskOnFailedTests: true
 ```
-Once the pipeline has run successfully both test and coverage results will be available.
+Once the pipeline has run successfully, both test and coverage results will be available.
 
 ## Interpreting the test and code coverage results
 There are two pages available, a test results page and a code coverage page. The test results page will show all executed tests and directly show the failed tests.
@@ -129,13 +129,13 @@ There are two pages available, a test results page and a code coverage page. The
 ![pipeline-tests]({{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-tests.png)
 </a>
 
-By default, a filter is applied to only show the aborted and failed test. By deselecting these options all tests will be shown.
+By default, a filter is applied to only show the aborted and failed tests. By deselecting these options, all tests will be shown.
 
 <a href="{{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-tests-filter.png" data-lightbox="pipeline-tests-filter">
 ![pipeline-tests-filter]({{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-tests-filter.png)
 </a>
 
-The code coverage tab will show the code coverage of each script and modules that have been included in the tests.
+The code coverage tab will show the code coverage of each script and module that were included in the tests.
 
 <a href="{{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-coverage.png" data-lightbox="pipeline-coverage">
 ![pipeline-coverage]({{site.baseurl}}/assets/images/posts/2021-02-26-increase-the-success-rate-of-the-azure-devops-pipelines-using-pester/pipeline-coverage.png)
@@ -162,7 +162,7 @@ For example:
 condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
 ```
 
-Now combining all the options results in a multi state pipeline that includes Pester testing.
+Now combining all the options results in a multi-stage pipeline that includes Pester testing.
 
 ```YAML
 name: 'GO-EUC Deployment Pipeline'
@@ -224,7 +224,7 @@ stages:
 ```
 
 ## Conclusion:
-Pester is a powerful framework to increase the quality of the PowerShell code that is created. By integrating, the Pester tests into the Azure DevOps pipeline will increase the success rate of your deployment. Now, this is, of course, depending on various factors but unit testing your code will prevent any unexpected changes that might break the pipeline.
+Pester is a powerful framework to increase the quality of the PowerShell code that is created. By integrating the Pester tests into the Azure DevOps pipeline will increase the success rate of your deployment. Now, this is, of course, depending on various factors but unit testing your code will prevent any unexpected changes that might break the pipeline.
 
 Now it is important to keep in mind Pester is an investment and will require additional time to create and maintain the tests. Writing the tests will provide direct insight into how to improve the code, as it forces you to think about various conditions. In order to keep the standards high, commitment from the entire team will be necessary.
 
