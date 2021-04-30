@@ -55,7 +55,7 @@ Now as the Ansible playbook will be executed locally on the machine or DevOps ag
 See the Ansible documentation for more information: [Installing Ansible - Ansible Documentation](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html){:target="_blank"}.
 
 ## The drawback of this strategy and toolset
-Now it is important to also understand the drawback of this strategy. At first, knowledge and mindset are big drawbacks of this strategy. This is also the biggest feedback received which was covered in a previous post.
+Now it is important to also understand the drawback of this strategy. At first, knowledge and mindset are big drawbacks of this strategy. This is also the biggest feedback received which was covered in a previous post: [Logit Blog - Top 5 challenges of DevOps in End User Computing (EUC)](https://www.logitblog.com/top-5-challenges-of-devops-in-end-user-computing-(euc)/){:target="_blank"}.
 
 Even though the toolset is available for years, in general to a lot of organizations it is new. This means teams need to get familiar with the tools but also the way of working in code. Luckily, there is a lot of content out there to get you started.
 
