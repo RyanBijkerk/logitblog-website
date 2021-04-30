@@ -25,7 +25,7 @@ Designed for multi-tier deployments since day one, Ansible models your IT infras
 
 It uses no agents and no additional custom security infrastructure, so it's easy to deploy - and most importantly, it uses a very simple language (YAML, in the form of Ansible Playbooks) that allow you to describe your automation jobs in a way that approaches plain English.
 
-Source: [How Ansible Works | Ansible.com](https://www.ansible.com/overview/how-ansible-works){:target="_blank"}
+Source: [How Ansible Works | Ansible](https://www.ansible.com/overview/how-ansible-works){:target="_blank"}
 
 ## Everything as code strategy
 The term Infrastructure as Code (IaC) is becoming a standard, but from my perspective, this is just a small part of the bigger picture. From the DevOps thoughts, it is all about combining development and operation to minimize the gap between both worlds. By using a term as Infrastructure as Code the same gab is created. Infrastructure is the foundation of the services you want to offer, which is in most cases applications or access to data. In the end-user computing context, this can be a virtual desktop to deliver these applications.
