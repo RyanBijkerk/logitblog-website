@@ -1,6 +1,6 @@
 ---
 layout: post
-hidden: true
+hidden: false
 title: "Terraform & Ansible: Better Together"
 authors: [ryan]
 categories: ['As Code']
