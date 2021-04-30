@@ -46,7 +46,7 @@ Now to apply this in practice, lets cover an example. Terraform is capable to ex
 
 ```hcl
 provisioner "local-exec" {
-    command                     = "ansible-playbook playbook-example.yaml -i ${vsphere_virtual_machine.vm_dhcp[count.index].default_ip_address}, -e ansible_user=${var.local_admin} -e ansible_password=${var.local_admin_password} -e ansible_connection=winrm -e ansible_winrm_server_cert_validation=ignore -e ansible_port=5985"
+    command = "ansible-playbook playbook-example.yaml -i ${vsphere_virtual_machine.vm_dhcp[count.index].default_ip_address}, -e ansible_user=${var.local_admin} -e ansible_password=${var.local_admin_password} -e ansible_connection=winrm -e ansible_winrm_server_cert_validation=ignore -e ansible_port=5985"
   }
 ```
 The -i parameter stands for the inventory, this is the address of the machine which is in this case provided by Terraform. The -e parameter is the extra variables, this way you can provide the required parameters from the playbook. In this example the -e parameters are used to define the ansible_user and ansible_password for authentication and the ansible_connection for defining the WINRM protocol as the communication protocol, as this is a Windows-based machine.
