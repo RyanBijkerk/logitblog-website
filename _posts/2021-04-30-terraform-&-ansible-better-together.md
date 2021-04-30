@@ -25,7 +25,7 @@ Designed for multi-tier deployments since day one, Ansible models your IT infras
 
 It uses no agents and no additional custom security infrastructure, so it's easy to deploy - and most importantly, it uses a very simple language (YAML, in the form of Ansible Playbooks) that allow you to describe your automation jobs in a way that approaches plain English.
 
-Source: [How Ansible Works | Ansible](https://www.ansible.com/overview/how-ansible-works){:target="_blank"}
+Source: [How Ansible Works - Ansible](https://www.ansible.com/overview/how-ansible-works){:target="_blank"}
 
 ## Everything as code strategy
 The term Infrastructure as Code (IaC) is becoming a standard, but from my perspective, this is just a small part of the bigger picture. From the DevOps thoughts, it is all about combining development and operation to minimize the gap between both worlds. By using a term as Infrastructure as Code the same gab is created. Infrastructure is the foundation of the services you want to offer, which is in most cases applications or access to data. In the end-user computing context, this can be a virtual desktop to deliver these applications.
@@ -52,7 +52,7 @@ provisioner "local-exec" {
 The -i parameter stands for the inventory, this is the address of the machine which is in this case provided by Terraform. The -e parameter is the extra variables, this way you can provide the required parameters from the playbook. In this example the -e parameters are used to define the ansible_user and ansible_password for authentication and the ansible_connection for defining the WINRM protocol as the communication protocol, as this is a Windows-based machine.
 
 Now as the Ansible playbook will be executed locally on the machine or DevOps agent, it must be a Linux-based operating system. This is because Ansible cannot be initiated from a Windows operating system.
-See the Ansible documentation for more information: [Installing Ansible — Ansible Documentation](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html){:target="_blank"}.
+See the Ansible documentation for more information: [Installing Ansible - Ansible Documentation](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html){:target="_blank"}.
 
 ## The drawback of this strategy and toolset
 Now it is important to also understand the drawback of this strategy. At first, knowledge and mindset are big drawbacks of this strategy. This is also the biggest feedback received which was covered in a previous post.
