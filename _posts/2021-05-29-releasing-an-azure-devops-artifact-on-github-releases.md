@@ -60,27 +60,27 @@ At this stage, the artifact is available and ready to be released.
 Now by default Azure DevOps has the GitHubRelease task available, so this means no marketplace plugin needs to be installed to achieve our goal.
 But before this can be leveraged, a connection to the GitHub account needs to be made. This can be done in the project settings and the service connections.
 
-<a href="{{site.baseurl}}/assets/images/posts2021-05-29-releasing-a-azure-devops-artifact-on-github-releases/azure-devops-service-connections.png" data-lightbox="azure-devops-service-connections">
-![azure-devops-service-connections]({{site.baseurl}}/assets/images/posts/2021-05-29-releasing-a-azure-devops-artifact-on-github-releases/azure-devops-service-connections.png)
+<a href="{{site.baseurl}}/assets/images/posts2021-05-29-releasing-an-azure-devops-artifact-on-github-releases/azure-devops-service-connections.png" data-lightbox="azure-devops-service-connections">
+![azure-devops-service-connections]({{site.baseurl}}/assets/images/posts/2021-05-29-releasing-an-azure-devops-artifact-on-github-releases/azure-devops-service-connections.png)
 </a>
 
 Create a new service connection and select GitHub:
 
-<a href="{{site.baseurl}}/assets/images/posts2021-05-29-releasing-a-azure-devops-artifact-on-github-releases/azure-devops-service-connections-github.png" data-lightbox="azure-devops-service-connections-github">
-![azure-devops-service-connections-github]({{site.baseurl}}/assets/images/posts/2021-05-29-releasing-a-azure-devops-artifact-on-github-releases/azure-devops-service-connections-github.png)
+<a href="{{site.baseurl}}/assets/images/posts2021-05-29-releasing-an-azure-devops-artifact-on-github-releases/azure-devops-service-connections-github.png" data-lightbox="azure-devops-service-connections-github">
+![azure-devops-service-connections-github]({{site.baseurl}}/assets/images/posts/2021-05-29-releasing-an-azure-devops-artifact-on-github-releases/azure-devops-service-connections-github.png)
 </a>
 
 By default the Authentication method is on Grant authorization, this will guide you through the authentication flow. Depending on your preference you can choose one of the two methods.
 Hit the authorize and follow the authentication flow.
 
-<a href="{{site.baseurl}}/assets/images/posts2021-05-29-releasing-a-azure-devops-artifact-on-github-releases/azure-devops-service-connections-github-done.png" data-lightbox="azure-devops-service-connections-github-done">
-![azure-devops-service-connections-github-done]({{site.baseurl}}/assets/images/posts/2021-05-29-releasing-a-azure-devops-artifact-on-github-releases/azure-devops-service-connections-github-done.png)
+<a href="{{site.baseurl}}/assets/images/posts2021-05-29-releasing-an-azure-devops-artifact-on-github-releases/azure-devops-service-connections-github-done.png" data-lightbox="azure-devops-service-connections-github-done">
+![azure-devops-service-connections-github-done]({{site.baseurl}}/assets/images/posts/2021-05-29-releasing-an-azure-devops-artifact-on-github-releases/azure-devops-service-connections-github-done.png)
 </a>
 
 In the end, a service connection is available.
 
-<a href="{{site.baseurl}}/assets/images/posts2021-05-29-releasing-a-azure-devops-artifact-on-github-releases/azure-devops-service-connection-listed.png" data-lightbox="azure-devops-service-connection-listed">
-![azure-devops-service-connection-listed]({{site.baseurl}}/assets/images/posts/2021-05-29-releasing-a-azure-devops-artifact-on-github-releases/azure-devops-service-connection-listed.png)
+<a href="{{site.baseurl}}/assets/images/posts2021-05-29-releasing-an-azure-devops-artifact-on-github-releases/azure-devops-service-connection-listed.png" data-lightbox="azure-devops-service-connection-listed">
+![azure-devops-service-connection-listed]({{site.baseurl}}/assets/images/posts/2021-05-29-releasing-an-azure-devops-artifact-on-github-releases/azure-devops-service-connection-listed.png)
 </a>
 
 The GitHubRelease task does require a couple of parameters. At first the service connection and the repository name on GitHub. Secondly, it also required the SHA of the latest commit. As this is a separate repository, this information is not directly available. Luckily GitHub does provide an API so this can be collected using that. Now in this example, PowerShell is used to collect the SHA of the latest commit.
@@ -112,8 +112,8 @@ Now collected this information the release can be created. In this example, the 
 ```
 In the end, you will end up with a release on GitHub like this:
 
-<a href="{{site.baseurl}}/assets/images/posts2021-05-29-releasing-a-azure-devops-artifact-on-github-releases/gitub-release.png" data-lightbox="gitub-release">
-![gitub-release]({{site.baseurl}}/assets/images/posts/2021-05-29-releasing-a-azure-devops-artifact-on-github-releases/gitub-release.png)
+<a href="{{site.baseurl}}/assets/images/posts2021-05-29-releasing-an-azure-devops-artifact-on-github-releases/gitub-release.png" data-lightbox="gitub-release">
+![gitub-release]({{site.baseurl}}/assets/images/posts/2021-05-29-releasing-an-azure-devops-artifact-on-github-releases/gitub-release.png)
 </a>
 ## Staging best practices
 A release of the software is in most cases a controlled moment, so you want to avoid on each build a new release is created. In Azure DevOps pipelines you can create multiple stages including conditions. Using the following condition will only run the stage when it is run from the main branch. 
