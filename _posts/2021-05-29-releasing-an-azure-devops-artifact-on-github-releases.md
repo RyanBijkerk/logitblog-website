@@ -5,7 +5,7 @@ title: "Releasing an Azure DevOps artifact on GitHub releases"
 authors: [ryan]
 categories: ['DevOps']
 tags: [DevOps, GitHub, PowerShell, Code]
-image: assets/images/posts/2021-05-29-releasing-ab-azure-devops-artifact-on-github-releases/releasing-an-azure-devops -artifact-on-github-releases-feature-image.png
+image: assets/images/posts/2021-05-29-releasing-an-azure-devops-artifact-on-github-releases/releasing-an-azure-devops -artifact-on-github-releases-feature-image.png
 ---
 When distributing software there are multiple options to achieve this. It can be provided via the website, using a cloud storage solution, using GitHub, etc. GitHub is a very common location to share the source code and releases, but it can also be used to just release an executable. This blog post will show how to release an Azure DevOps artifact via a GitHub release.
 
