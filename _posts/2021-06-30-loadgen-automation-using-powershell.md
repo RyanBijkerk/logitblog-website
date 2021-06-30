@@ -86,7 +86,7 @@ Function Start-Test {
     return $tableName
 }
 ```
-the following function si their monitoring function, which requires the same parameters plus the table name that has been returned from the previous function.
+The following function is the monitoring function, which requires the same parameters plus the table name that has been returned from the previous function.
 
 ```PowerShell
 Function Monitor-Test {
