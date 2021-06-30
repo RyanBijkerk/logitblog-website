@@ -32,7 +32,7 @@ The example will do the following steps:
 
 These steps are all done using PowerShell and require the SQLServer module in Powershell, which can be installed by the following command:
 
-```PowerShell
+```powershell
 Install-Module -Name SqlServer
 ```
 Source: [PowerShell Gallery | SqlServer](https://www.powershellgallery.com/packages/Sqlserver){:target="_blank"}.
@@ -88,7 +88,7 @@ Function Start-Test {
 ```
 The following function is the monitoring function, which requires the same parameters plus the table name that has been returned from the previous function.
 
-```PowerShell
+```powershell
 Function Monitor-Test {
     Param( 
         [string]$TableName,
@@ -162,7 +162,7 @@ Function Monitor-Test {
 
 The following example shows how both functions can be used:
 
-```PowerShell
+```powershell
 $databaseTable = Start-Test -SqlServer "sql-1" -Database "LoadGen" -Canvas "Default_Citrix"
 
 Monitor-Test -SqlServer "sql-1" -Database "LoadGen" -Canvas "Default_Citrix" -TableName $databaseTable
