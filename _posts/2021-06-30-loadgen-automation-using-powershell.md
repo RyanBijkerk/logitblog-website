@@ -7,7 +7,7 @@ categories: ['LoadGen']
 tags: [LoadGen, PowerShell, Code]
 image: assets/images/posts/2021-06-30-loadgen-automation-using-powershell/loadgen-automation-using-powersehll-feature-image.png
 ---
-When performing a lot of performance tests using LoadGen automation is key to ensure consistency and time. This blog post will share how to start and monitor a LoadGen test using PowerShell.
+Automation is key when performance a lot of LoadGen tests. Using the automation ensure consistency and reduces time. At GO-EUC automation is heavily used to continuously execute LoadGen performance tests based on schedule. This blog post provides some of the GO-EUC logic that can start and monitor a LoadGen test using PowerShell.
 
 ## What is LoadGen?
 For those who are not familiar with LoadGen, let's first start introducing it.
