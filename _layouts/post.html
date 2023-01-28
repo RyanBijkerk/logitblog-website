@@ -102,8 +102,10 @@ layout: default
 			<div>
 				
 				<!-- Article -->
-				<article class="article-post">                
-				{{ content }}                
+				<article class="article-post">  
+					<h2>Table of Content</h2>
+					{% include toc.html html=content %}              
+					{{ content }}                
 				</article>
 				
 				<!-- Share -->
