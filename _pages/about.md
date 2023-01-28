@@ -7,15 +7,11 @@ comments: false
 {% assign author = site.authors['ryan'] %}
 
 <img style="float: left; width: 200px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}">
-My name is Ryan Ververs-Bijkerk and I have created Logit Blog in November 2010. I use this blog to share knowledge and experience from the field.
+My name is Ryan Ververs-Bijkerk and I established Logit Blog in November 2010. I use this platform to share my knowledge and experiences from the field. As a self-employed technologist at GO-INIT, my focus is on the EUC and code area. I prioritize user experience in centralized desktop environments and use my development skills to adapt quickly to customer needs with an agile mindset. I am also known for my laziness, but in a good way as I am all about automation and dislike repetitive tasks.
 
-I'm a self-employed Technologist at GO-INIT focused on the EUC and Code area. I primarily focusing on the user experience in centralized desktop environments. With my development skills, I'm capable to quickly adapt to customers by having an agile mindset. Yes, I'm a bit lazy, yes lazy but in a good way. I'm all about automation as I'm not made for repeating tasks.
+Community is important to me as I am an blogger and have published multiple tools. In addition to this personal blog and tools, I am also a member of the Remote Display Analyzer team and TeamRGE. I have been recognized as a Microsoft Most Valuable Professional (MVP) multiple times and currently hold the Citrix Technology Professional (CTP), NVIDIA vGPU Community Advisor (NGCA), and VMware vExpert status.
 
-Community is very important for me as I'm an active blogger and has published multiple tools. Next, to this personal blog and tools, I'm also a member of the Remote Display Analyzer team and TeamRGE. I have been awarded several times for Microsoft Most Valuable Professional (MVP) and currently hold the Citrix Technology Professional (CTP), NVIDIA vGPU Community Advisor (NGCA) and VMware vExpert status.
-
-If you ever meet me you can always do me a pleasure buying a beer because I love beer. Besides that, I also enjoy sim racing and playing games like Rainbow Six Siege.
-
-You can follow me on Twitter or get in touch via LinkedIn.
+If you ever meet me, you can always do me a favor by buying me a beer, as I love them. In my free time, I enjoy sim racing and playing games like Rainbow Six Siege. You can follow me on Twitter or connect with me on LinkedIn.
 <div>
     <span>
         {% if author.twitter %}
