@@ -11,7 +11,7 @@ Unit testing serves as a crucial method to ensure the quality of code. This prin
 ## Grasping Mocking in Pester
 For those unfamiliar with Pester and its mocking capabilities, here's a concise introduction to Pester's mocking features. As outlined in the documentation, Pester offers a set of mocking functions that streamline the process of simulating dependencies and validating behaviors. These functions enable you to effectively "shim" data layers or mock intricate functions that already possess their own tests.
 
-Source: [Mock](https://pester.dev/docs/commands/Mock){target:"_blank"}
+Source: [Mock](https://pester.dev/docs/commands/Mock){:target="_blank"}
 
 When conducting code tests, the objective is to validate the logic of a script or function without actually executing it. Imagine a scenario where a script is designed to delete user accounts from Azure Active Directory. Naturally, during testing, you wouldn't want actual deletions to occur. Mocking a commandlet replaces its genuine execution during tests, granting you the ability to manipulate behaviors and create diverse test scenarios.
 
