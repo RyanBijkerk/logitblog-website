@@ -13,7 +13,7 @@ For those unfamiliar with Pester and its mocking capabilities, here's a concise 
 
 Source: [Mock](https://pester.dev/docs/commands/Mock){:target="_blank"}
 
-When conducting code tests, the objective is to validate the logic of a script or function without actually executing it. Imagine a scenario where a script is designed to delete user accounts from Azure Active Directory. Naturally, during testing, you wouldn't want actual deletions to occur. Mocking a commandlet replaces its genuine execution during tests, granting you the ability to manipulate behaviors and create diverse test scenarios.
+When conducting code tests, the objective is to validate the logic of a script or function without actually executing it. Imagine a scenario where a script is designed to delete user accounts from Microsoft Entra, which is the new name for Azure Active Directory. Naturally, during testing, you wouldn't want actual deletions to occur. Mocking a commandlet replaces its genuine execution during tests, granting you the ability to manipulate behaviors and create diverse test scenarios.
 
 To illustrate, consider the following mock commandlet:
 
