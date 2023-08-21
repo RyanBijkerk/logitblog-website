@@ -1,6 +1,6 @@
 ---
 layout: post
-hidden: true
+hidden: false
 title: "Mastering Mocking with Pester: CommandNotFoundException"
 authors: [ryan]
 categories: ['PowerShell']
