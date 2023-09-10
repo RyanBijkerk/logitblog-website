@@ -18,7 +18,7 @@ Most enterprises today have credentials sprawled across their organisations. Pas
 
 Vault was designed with these challenges in mind. Vault takes all of these credentials and centralizes them so that they are defined in one location, which reduces unwanted exposure to credentials. But Vault takes it a few steps further by making sure users, apps, and systems are authenticated and explicitly authorized to access resources, while also providing an audit trail that captures and preserves a history of clients' actions.
 
-Source: [Introduction | Vault | HashiCorp Developer](https://developer.hashicorp.com/vault/docs/what-is-vault){:target="_blank"}
+Source: [Introduction - Vault - HashiCorp Developer](https://developer.hashicorp.com/vault/docs/what-is-vault){:target="_blank"}
 
 ## Why using a Hashicorp Vault in Microsoft Azure?
 What an excellent question, because, as you may already be aware, Azure does offer a built-in solution known as Azure KeyVault. However, in this particular scenario, the choice to utilize HashiCorp Vault is rooted in our multi-cloud strategy. This example draws inspiration from the GO-EUC Infrastructure as Code project, which revolves around deploying test environments across various cloud providers and on-premises setups. All infrastructure deployments are orchestrated using HashiCorp Terraform, and the desired state is configured using Ansible.
@@ -49,7 +49,7 @@ ui = true
 disable_mlock = true
 ```
 
-More information about the configuration file can be found here: [Server Configuration | Vault | HashiCorp Developer](https://developer.hashicorp.com/vault/docs/configuration){:target="_blank"}
+More information about the configuration file can be found here: [Server Configuration - Vault - HashiCorp Developer](https://developer.hashicorp.com/vault/docs/configuration){:target="_blank"}
 ### Providers
 Now, let's break down the Terraform configuration, organized into individual files. Since this deployment is specifically for Azure, the `hashicorp/azurerm` module is essential. Additionally, we employ the `hashicorp/random` module to generate a random name for the storage account.
 
@@ -627,11 +627,11 @@ Terraform will perform the following actions:
 Plan: 12 to add, 0 to change, 0 to destroy.
 ```
 
-![azure-backend-deployment]({{site.baseurl}}/assets/posts/2023-09-11-deploying-a-hashicorp-vault-in-microsoft-azure-via-terraform/azure-backend-deployment.png)
+![azure-backend-deployment]({{site.baseurl}}/assets/images/posts/2023-09-11-deploying-a-hashicorp-vault-in-microsoft-azure-via-terraform/azure-backend-deployment.png)
 
 As previously mentioned, the Vault is only accessible from within the virtual network.
 
-![hashicorp-vault-ui]({{site.baseurl}}/assets/posts/2023-09-11-deploying-a-hashicorp-vault-in-microsoft-azure-via-terraform/hashicorp-vault-ui.png)
+![hashicorp-vault-ui]({{site.baseurl}}/assets/images/posts/2023-09-11-deploying-a-hashicorp-vault-in-microsoft-azure-via-terraform/hashicorp-vault-ui.png)
 
 When selecting a Vault solution, it is of paramount importance to have a clear understanding of the long-term goals and assess whether the chosen solution aligns with those objectives. In the case of GO-EUC, the utilization of multiple cloud solutions depends on research requirements. To support all deployment types and facilitate the reuse of Ansible configurations, HashiCorp Vault emerges as the most suitable choice. It can seamlessly operate on various platforms, including on-premises setups, enabling a consistent method for storing and retrieving secrets. Furthermore, HashiCorp Vault is an open-source Docker instance, making it freely accessible for use.
 
