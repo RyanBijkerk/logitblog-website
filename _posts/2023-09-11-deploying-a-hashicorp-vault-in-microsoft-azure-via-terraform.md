@@ -20,7 +20,7 @@ Vault was designed with these challenges in mind. Vault takes all of these crede
 
 Source: [Introduction - Vault - HashiCorp Developer](https://developer.hashicorp.com/vault/docs/what-is-vault){:target="_blank"}
 
-## Why using a Hashicorp Vault in Microsoft Azure?
+## Why use a Hashicorp Vault in Microsoft Azure?
 What an excellent question, because, as you may already be aware, Azure does offer a built-in solution known as Azure KeyVault. However, in this particular scenario, the choice to utilize HashiCorp Vault is rooted in our multi-cloud strategy. This example draws inspiration from the GO-EUC Infrastructure as Code project, which revolves around deploying test environments across various cloud providers and on-premises setups. All infrastructure deployments are orchestrated using HashiCorp Terraform, and the desired state is configured using Ansible.
 
 As you might be aware, Terraform is cloud-specific, meaning deployment targets are tailored to a specific platform. This, however, isn't the case with Ansible. Opting for HashiCorp allows us to seamlessly integrate a single Vault solution into Ansible, making it possible to reuse all Ansible playbooks across different platforms. This streamlines operations and reduces overhead significantly.
