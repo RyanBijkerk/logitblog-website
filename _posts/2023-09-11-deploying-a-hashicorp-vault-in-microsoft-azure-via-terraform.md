@@ -1,6 +1,6 @@
 ---
 layout: post
-hidden: true
+hidden: false
 title: "Deploying a Hashicorp Vault in Microsoft Azure via Terraform"
 authors: [ryan]
 categories: ['Vault']
